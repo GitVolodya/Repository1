@@ -34,4 +34,10 @@ void output(int** z, int m, int n)
 	int i, j;
 	printf("\n Результирующая матрица \n");
 	for (i = 0; i < m; i++)
+{
+		for (j = 0; j < n; j++)
+			printf("%d", z[i][j]);
+		printf("\n");
+	}
+}
 
