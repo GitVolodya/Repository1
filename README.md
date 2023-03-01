@@ -10,5 +10,15 @@ int** input(int n, int m)
 	setlocale(LC_ALL, "Rus");
 	int i, j;
 	int** a;
+a = (int**)malloc(m * sizeof(int*));
+	for (i = 0; i < m; i++)
+	{
+		a[i] = (int*)malloc(n * sizeof(int*));
+		for (j = 0; j < n; j++)
+		{
+			a[i][j] = 0;
+		}
+	}
+
 
 
