@@ -40,4 +40,18 @@ void output(int** z, int m, int n)
 		printf("\n");
 	}
 }
+int main(void)
+{
+	setlocale(LC_ALL, "Rus");
+	int m, n;
+	int** p, ** q;
+	puts("¬ведите размер исходной матриц ");
+	printf("число строк = ");
+	scanf_s("%d", &m);
+	printf("число столбцов = ");
+	scanf_s("%d", &n); 
+	p = input(m, n);
+	output(p, m, n);
+	q = input(m, n);
+	output(p, m, n);
 
