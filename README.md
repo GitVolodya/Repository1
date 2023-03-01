@@ -27,4 +27,11 @@ for (i = 0; i < m; i++)
 			printf("\n Введите элемент матрицы A(%d,%d)", i + 1, j + 1);
 			scanf_s("%d", &a[i][j]);
 		}
+return a;
+}
+void output(int** z, int m, int n)
+{
+	int i, j;
+	printf("\n Результирующая матрица \n");
+	for (i = 0; i < m; i++)
 
